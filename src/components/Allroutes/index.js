@@ -91,13 +91,51 @@ export default function Allroutes() {
   return (
     <AnimatePresence>
       <Routes >
-        
+    <Route path="/home" element={<Homecontent  />} />,
+        <Route path="/dashboard" element={<Dashboard data={data}/>} />,
+   // {/* <Route path='/' element={<Dashbaord2/>}/> */},
+    <Route path="/dashboard2" element={<Dashbaord2 data={data}/>} />,
+    <Route path="/session" element={<Session data={data}/>} />,
+    <Route path="/community" element={<Community data={data}/>} />,
+    <Route path="/community2" element={<Community2 data={data}/>} />,
+    <Route path="/community3" element={<Community3 data={data}/>} />,
+    <Route path="/dashboard-counsellor" element={<CounsellorDashboard data={data}/>} />,
+    <Route path="/session-counsellor" element={<CounsellorSession data={data}/>} />,
+    <Route
+      path="/session-client-details"
+      element={<SessionClientDetail />}
+    />,
+    <Route
+      path="/counsellor-manage-community"
+      element={<CounsellorManageCommunity />}
+    />,
+    <Route path="/counsellor-community" element={<CounsellorCommunity />} />,
+    <Route
+      path="/counsellor-community-discussion"
+      element={<CounsellorCommunityDiscussion />}
+    />,
+    <Route path="/profile" element={<Profile data={data}/>} />,
+    <Route
+      path="/profile-self-assessment"
+      element={<ProfileSelfAssessment />}
+    />,
+    <Route path="/payment-history" element={<Payment />} />,
+    <Route path="/add-payment-details" element={<Addpayment />} />,
+    <Route path="/book-session" element={<Book />} />,
+    <Route path="/confirmation" element={<Confirmation />} />,
+    <Route path="/created" element={<Created />} />,
+    <Route path="/profile-counsellor" element={<Profilecounsellor />} />,
+    <Route path="/payment-counsellor" element={<PaymentCo />} />,
+    <Route
+      path="/add-payment-details-counsellor"
+      element={<PaymentAddC />}
+    />,
         <Route path="/" element={<Login />} />,
         <Route path="/signup" element={<SignUp  />} />,
         <Route path="/Signup" element={<SignUp  />} />,
         <Route path="/login" element={<Login  />} />,
        
-       <Route path="/home" element={<Homecontent  />} />,
+       
        <Route path="/about" element={<Aboutus  />} />,
         <Route path="/contactus" element={<ContactUs />} />,
         <Route path="/counsellors" element={<Counsellors />} />,
