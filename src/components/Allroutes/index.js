@@ -91,12 +91,12 @@ export default function Allroutes() {
   return (
     <AnimatePresence>
       <Routes >
-        { data?(loggedInRoutes):
-        (<Route path="/" element={<Login />} />,
+        
+        <Route path="/" element={<Login />} />,
         <Route path="/signup" element={<SignUp  />} />,
         <Route path="/Signup" element={<SignUp  />} />,
-        <Route path="/login" element={<Login  />} />)  
-       }
+        <Route path="/login" element={<Login  />} />,
+       
        <Route path="/home" element={<Homecontent  />} />,
        <Route path="/about" element={<Aboutus  />} />,
         <Route path="/contactus" element={<ContactUs />} />,
